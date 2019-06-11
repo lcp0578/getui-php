@@ -1,5 +1,5 @@
 {
-  "name": "fastgoo/getui-php",
+  "name": "lcp0578/getui-php",
   "type": "library",
   "description": "个推PHP扩展包",
   "keywords": [
@@ -18,7 +18,7 @@
   "require": {
     "php": ">=5.6",
     "guzzlehttp/guzzle": "^6.3",
-    "symfony/cache": "^4.1"
+    "symfony/cache": "^3.4"
   },
   "autoload": {
     "psr-4": {
