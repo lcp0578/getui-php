@@ -30,8 +30,8 @@ class Client
             throw new ApiException('未设置配置信息');
         }
         $this->api = new Api($config);
-        $this->single = new Single($config);
-        $this->batch = new Batch($config);
-        $this->task = new Task($config);
+        $this->single = new Single($config, $this->api);
+        $this->batch = new Batch($config, $this->api);
+        $this->task = new Task($config, $this->api);
     }
 }

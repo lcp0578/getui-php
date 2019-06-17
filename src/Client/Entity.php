@@ -35,8 +35,9 @@ class Entity
     /**
      * PushClient constructor.
      * @param array $config
+     * @param Api $api
      */
-    public function __construct(array $config)
+    public function __construct(array $config, Api $api)
     {
         $this->message = new Message();
         $this->notification = new Notification();
@@ -44,7 +45,7 @@ class Entity
         $this->link = new Link();
         $this->style = new Style();
         $this->pushInfo = new PushInfo();
-        $this->api = new Api($config);
+        $this->api = $api;
         $this->config = $config;
     }
 
