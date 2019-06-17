@@ -18,7 +18,7 @@ trait ClientManage
      * 请求uri
      * @var string
      */
-    protected $baseUri = 'https://restapi.getui.com/v1/';
+    protected $baseUri = 'https://nz4restapi.getui.com/v1/';
 
     /**
      * 授权token

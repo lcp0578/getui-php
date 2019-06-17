@@ -9,14 +9,15 @@
 namespace GeTui\Client;
 
 use GeTui\ApiException;
+use GeTui\Api;
 
 class Task extends Entity
 {
     public $taskId;
 
-    public function __construct(array $config)
+    public function __construct(array $config, Api $api)
     {
-        parent::__construct($config);
+        parent::__construct($config, $api);
     }
 
     /**
